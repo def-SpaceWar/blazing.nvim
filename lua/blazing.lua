@@ -282,7 +282,7 @@ M.load_syntax = function(palette)
             fg = palette.white,
         },
         SpecialComment = {
-            fg = palette.grey,
+            fg = palette.blue,
             style = 'italic',
         },
         Tag = {
@@ -292,7 +292,7 @@ M.load_syntax = function(palette)
             fg = palette.orange,
         },
         Comment = {
-            fg = palette.base6,
+            fg = palette.grey,
             style = 'italic',
         },
         Underlined = {
@@ -388,7 +388,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.purple,
         },
         ["@comment"] = {
-            fg = palette.base6,
+            fg = palette.grey,
             style = 'italic',
         },
         ["@conceal"] = {
