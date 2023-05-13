@@ -473,10 +473,10 @@ M.load_plugin_syntax = function(palette)
             style = 'italic',
         },
         ["@function.builtin"] = {
-            fg = palette.aqua,
+            fg = palette.pink,
         },
         ["@function.call"] = {
-            fg = palette.white,
+            fg = palette.aqua,
         },
         ["@function.macro"] = {
             fg = palette.green,
@@ -508,7 +508,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@method.call"] = {
-            fg = palette.white,
+            fg = palette.aqua,
         },
         ["@namespace"] = {
             fg = palette.purple,
@@ -644,7 +644,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.aqua,
         },
         ["@type.definition"] = {
-            fg = palette.aqua,
+            fg = palette.green,
         },
         ["@type.qualifier"] = {
             fg = palette.pink,
