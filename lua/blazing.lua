@@ -18,6 +18,7 @@ M.default = {
     black = '#000000',
     pink = '#EF3270',
     green = '#bbFF00',
+    blue = '#33CCEE',
     aqua = '#33EECC',
     yellow = '#EEFF44',
     orange = '#FF9900',
@@ -177,7 +178,7 @@ M.load_syntax = function(palette)
             style = 'bold',
         },
         Directory = {
-            fg = palette.aqua,
+            fg = palette.blue,
         },
         DiffAdd = {
             bg = palette.diff_add,
@@ -206,7 +207,7 @@ M.load_syntax = function(palette)
             bg = palette.black,
         },
         Constant = {
-            fg = palette.aqua,
+            fg = palette.purple,
         },
         Number = {
             fg = palette.purple,
@@ -256,10 +257,10 @@ M.load_syntax = function(palette)
             style = 'italic',
         },
         PreProc = {
-            fg = palette.green,
+            fg = palette.orange,
         },
         Include = {
-            fg = palette.aqua,
+            fg = palette.orange,
             style = 'italic',
         },
         Define = {
@@ -364,10 +365,10 @@ M.load_plugin_syntax = function(palette)
         fg = palette.grey,
     }
     local todo_group = {
-        fg = palette.aqua,
+        fg = palette.yellow,
     }
     local uri_group = {
-        fg = palette.aqua,
+        fg = palette.blue,
         style = 'underline',
     }
     return {
@@ -400,16 +401,16 @@ M.load_plugin_syntax = function(palette)
             fg = palette.pink,
         },
         ["@constant"] = {
-            fg = palette.aqua,
+            fg = palette.purple,
         },
         ["@constant.builtin"] = {
             fg = palette.purple,
         },
         ["@constant.macro"] = {
-            fg = palette.purple,
+            fg = palette.pink,
         },
         ["@constructor"] = {
-            fg = palette.aqua,
+            fg = palette.orange,
         },
         ["@debug"] = {
             fg = palette.pink,
@@ -427,7 +428,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@definition.enum"] = {
-            fg = palette.green,
+            fg = palette.yellow,
         },
         ["@definition.field"] = {
             fg = palette.green,
@@ -439,7 +440,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.white,
         },
         ["@definition.macro"] = {
-            fg = palette.green,
+            fg = palette.pink,
         },
         ["@definition.method"] = {
             fg = palette.green,
@@ -491,7 +492,7 @@ M.load_plugin_syntax = function(palette)
             style = 'italic',
         },
         ["@keyword.function"] = {
-            fg = palette.aqua,
+            fg = palette.blue,
             style = 'italic',
         },
         ["@keyword.operator"] = {
@@ -656,6 +657,56 @@ M.load_plugin_syntax = function(palette)
         ["@variable.builtin"] = {
             fg = palette.orange,
         },
+
+        ["@lsp.type.class"] = {
+            fg = palette.aqua,
+        },
+        ["@lsp.type.comment"] = {
+            fg = palette.grey,
+        },
+        ["@lsp.type.decorator"] = {
+            fg = palette.blue,
+        },
+        ["@lsp.type.enum"] = {
+            fg = palette.yellow,
+        },
+        ["@lsp.type.enumMember"] = {
+            fg = palette.purple,
+        },
+        ["@lsp.type.function"] = {
+            fg = palette.green,
+        },
+        ["@lsp.type.interface"] = {
+            fg = palette.aqua,
+        },
+        ["@lsp.type.macro"] = {
+            fg = palette.pink,
+        },
+        ["@lsp.type.method"] = {
+            fg = palette.green,
+        },
+        ["@lsp.type.namespace"] = {
+            fg = palette.yellow,
+        },
+        ["@lsp.type.parameter"] = {
+            fg = palette.orange,
+        },
+        ["@lsp.type.property"] = {
+            fg = palette.blue,
+        },
+        ["@lsp.type.struct"] = {
+            fg = palette.aqua,
+        },
+        ["@lsp.type.type"] = {
+            fg = palette.aqua,
+        },
+        ["@lsp.type.typeParameter"] = {
+            fg = palette.aqua,
+        },
+        ["@lsp.type.variable"] = {
+            fg = palette.white,
+        },
+
         dbui_tables = {
             fg = palette.white,
         },
