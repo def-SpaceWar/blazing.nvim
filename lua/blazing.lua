@@ -2,9 +2,9 @@ local M = {}
 
 M.default = {
     name = 'blazing',
-    base0 = '#242622',
-    base1 = '#2a3027',
-    base2 = '#292C26',
+    base0 = '#151910',
+    base1 = '#151910',
+    base2 = '#252920',
     base3 = '#323C2E',
     base4 = '#384233',
     base5 = '#51544d',
