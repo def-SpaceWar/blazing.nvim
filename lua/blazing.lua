@@ -445,7 +445,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@definition.namespace"] = {
-            fg = palette.white,
+            fg = palette.yellow,
         },
         ["@definition.parameter"] = {
             fg = palette.orange,
@@ -511,7 +511,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@namespace"] = {
-            fg = palette.purple,
+            fg = palette.yellow,
         },
         -- ["@nospell"] = {},
         ["@number"] = {
