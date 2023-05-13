@@ -524,7 +524,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.orange,
         },
         ["@parameter.reference"] = {
-            fg = palette.white,
+            fg = palette.orange,
         },
         ["@preproc"] = {
             fg = palette.green,
