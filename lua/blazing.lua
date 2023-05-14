@@ -410,7 +410,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.pink,
         },
         ["@constructor"] = {
-            fg = palette.pink,
+            fg = palette.aqua,
         },
         ["@debug"] = {
             fg = palette.pink,
