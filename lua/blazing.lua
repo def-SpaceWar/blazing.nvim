@@ -383,10 +383,10 @@ M.load_plugin_syntax = function(palette)
         ["@attribute.html"] = {
             fg = palette.blue,
         },
-        ["@attribute.jsx"] = {
+        ["@attribute.javascriptreact"] = {
             fg = palette.blue,
         },
-        ["@attribute.tsx"] = {
+        ["@attribute.typescriptreact"] = {
             fg = palette.blue,
         },
         ["@boolean"] = {
