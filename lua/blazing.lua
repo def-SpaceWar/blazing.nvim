@@ -372,11 +372,22 @@ M.load_plugin_syntax = function(palette)
         style = 'underline',
     }
     return {
+        -- @selector.language
+        -- example @constructor.haskell
         ["@annotation"] = {
             fg = palette.green,
         },
         ["@attribute"] = {
             fg = palette.green,
+        },
+        ["@attribute.html"] = {
+            fg = palette.blue,
+        },
+        ["@attribute.jsx"] = {
+            fg = palette.blue,
+        },
+        ["@attribute.tsx"] = {
+            fg = palette.blue,
         },
         ["@boolean"] = {
             fg = palette.purple,
