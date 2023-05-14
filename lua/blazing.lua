@@ -9,10 +9,10 @@ M.default = {
     base4 = '#384233',
     base5 = '#51544d',
     base6 = '#a0a49c',
-    base7 = '#b1b1b1',
-    base8 = '#e3e1e3',
-    border = '#a1b5b1',
-    brown = '#504945',
+    base7 = '#b2b8a1',
+    base8 = '#eaefe0',
+    border = '#b2b8a1',
+    brown = '#495445',
     white = '#EFFFFF',
     grey = '#6D7248',
     black = '#000000',
@@ -488,7 +488,7 @@ M.load_plugin_syntax = function(palette)
             style = 'italic',
         },
         ["@keyword"] = {
-            fg = palette.blue,
+            fg = palette.pink,
             style = 'italic',
         },
         ["@keyword.function"] = {
