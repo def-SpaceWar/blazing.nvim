@@ -488,7 +488,7 @@ M.load_plugin_syntax = function(palette)
             style = 'italic',
         },
         ["@keyword"] = {
-            fg = palette.pink,
+            fg = palette.blue,
             style = 'italic',
         },
         ["@keyword.function"] = {
