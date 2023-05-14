@@ -1,3 +1,3 @@
 # Blazing
 
-This theme is inspired by Monokai and Monokai's Apprentice.
+This theme is inspired by Sublime's Monokai and Monokai's Apprentice.
