@@ -380,15 +380,6 @@ M.load_plugin_syntax = function(palette)
         ["@attribute"] = {
             fg = palette.green,
         },
-        ["@attribute.html"] = {
-            fg = palette.blue,
-        },
-        ["@attribute.javascriptreact"] = {
-            fg = palette.blue,
-        },
-        ["@attribute.typescriptreact"] = {
-            fg = palette.blue,
-        },
         ["@boolean"] = {
             fg = palette.purple,
         },
@@ -589,7 +580,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.pink,
         },
         ["@tag.attribute"] = {
-            fg = palette.green,
+            fg = palette.blue,
         },
         ["@tag.delimiter"] = {
             fg = palette.white,
