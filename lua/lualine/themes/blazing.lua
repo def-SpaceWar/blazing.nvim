@@ -45,12 +45,12 @@ return {
     c = {bg = colors.green, fg = colors.base2}
   },
   replace = {
-    a = {bg = colors.green, fg = colors.base2, gui = 'bold'},
+    a = {bg = colors.purple, fg = colors.base2, gui = 'bold'},
     b = {bg = colors.orange, fg = colors.base2},
     c = {bg = colors.green, fg = colors.base2}
   },
   command = {
-    a = {bg = colors.white, fg = colors.base2, gui = 'bold'},
+    a = {bg = colors.aqua, fg = colors.base2, gui = 'bold'},
     b = {bg = colors.orange, fg = colors.base2},
     c = {bg = colors.green, fg = colors.base2}
   },
