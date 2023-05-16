@@ -580,7 +580,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.pink,
         },
         ["@tag.attribute"] = {
-            fg = palette.blue,
+            fg = palette.orange,
         },
         ["@tag.delimiter"] = {
             fg = palette.white,
