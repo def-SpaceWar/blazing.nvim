@@ -17,17 +17,17 @@ M.default = {
     grey = '#6D7248',
     black = '#000000',
     pink = '#EF3270',
-    green = '#bbFF00',
+    green = '#BBFF00',
     blue = '#33CCEE',
     aqua = '#33EECC',
     yellow = '#EEFF44',
     orange = '#FF9900',
     purple = '#DD88FF',
-    red = '#e95678',
-    diff_add = '#3d5213',
-    diff_remove = '#4a0f23',
-    diff_change = '#27406b',
-    diff_text = '#23324d',
+    red = '#FF0000',
+    diff_add = '#BBFF00',
+    diff_remove = '#EF3270',
+    diff_change = '#EEFF44',
+    diff_text = '#33DDDD',
 }
 
 local function remove_italics(config, colors)
@@ -533,7 +533,16 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@property"] = {
-            fg = palette.yellow,
+            fg = palette.white,
+        },
+        ["@property.css"] = {
+            fg = palette.green,
+        },
+        ["@property.sass"] = {
+            fg = palette.green,
+        },
+        ["@property.scss"] = {
+            fg = palette.green,
         },
         ["@punctuation.bracket"] = {
             fg = palette.white,
@@ -694,7 +703,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.orange,
         },
         ["@lsp.type.property"] = {
-            fg = palette.yellow,
+            fg = palette.white,
         },
         ["@lsp.type.struct"] = {
             fg = palette.aqua,
