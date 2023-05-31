@@ -533,7 +533,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@property"] = {
-            fg = palette.white,
+            fg = palette.yellow,
         },
         ["@punctuation.bracket"] = {
             fg = palette.white,
@@ -694,7 +694,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.orange,
         },
         ["@lsp.type.property"] = {
-            fg = palette.blue,
+            fg = palette.yellow,
         },
         ["@lsp.type.struct"] = {
             fg = palette.aqua,
