@@ -260,7 +260,7 @@ M.load_syntax = function(palette)
             fg = palette.orange,
         },
         Include = {
-            fg = palette.pink,
+            fg = palette.green,
             style = 'italic',
         },
         Define = {
@@ -486,7 +486,7 @@ M.load_plugin_syntax = function(palette)
             style = 'italic',
         },
         ["@include"] = {
-            fg = palette.pink,
+            fg = palette.green,
             style = 'italic',
         },
         ["@keyword"] = {
