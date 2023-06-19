@@ -267,7 +267,7 @@ M.load_syntax = function(palette)
             fg = palette.pink,
         },
         Macro = {
-            fg = palette.green,
+            fg = palette.purple,
         },
         PreCondit = {
             fg = palette.pink,
@@ -409,7 +409,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.purple,
         },
         ["@constant.macro"] = {
-            fg = palette.green,
+            fg = palette.purple,
         },
         ["@constructor"] = {
             fg = palette.aqua,
@@ -442,7 +442,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.white,
         },
         ["@definition.macro"] = {
-            fg = palette.green,
+            fg = palette.purple,
         },
         ["@definition.method"] = {
             fg = palette.green,
@@ -482,7 +482,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@function.macro"] = {
-            fg = palette.green,
+            fg = palette.purple,
             style = 'italic',
         },
         ["@include"] = {
@@ -691,7 +691,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.aqua,
         },
         ["@lsp.type.macro"] = {
-            fg = palette.green,
+            fg = palette.purple,
         },
         ["@lsp.type.method"] = {
             fg = palette.green,
