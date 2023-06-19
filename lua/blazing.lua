@@ -448,7 +448,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@definition.namespace"] = {
-            fg = palette.yellow,
+            fg = palette.aqua,
         },
         ["@definition.parameter"] = {
             fg = palette.orange,
@@ -514,7 +514,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@namespace"] = {
-            fg = palette.yellow,
+            fg = palette.aqua,
         },
         -- ["@nospell"] = {},
         ["@number"] = {
@@ -697,7 +697,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@lsp.type.namespace"] = {
-            fg = palette.yellow,
+            fg = palette.aqua,
         },
         ["@lsp.type.parameter"] = {
             fg = palette.orange,
