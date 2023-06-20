@@ -30,6 +30,36 @@ M.default = {
     diff_text = '#33DDDD',
 }
 
+M.light = {
+    name = 'blazing-light',
+    base0 = '#f5f9f0',
+    base1 = '#f5f9f0',
+    base2 = '#e5e9e0',
+    base3 = '#e2eCdE',
+    base4 = '#d8d2c3',
+    base5 = '#c1c4bd',
+    base6 = '#545c50',
+    base7 = '#424841',
+    base8 = '#2a2f20',
+    border = '#323831',
+    brown = '#495445',
+    white = '#344444',
+    grey = '#6D7248',
+    black = '#000000',
+    pink = '#EF3270',
+    green = '#BBFF00',
+    blue = '#33CCEE',
+    aqua = '#33EECC',
+    yellow = '#EEFF44',
+    orange = '#FF9900',
+    purple = '#DD88FF',
+    red = '#FF0000',
+    diff_add = '#BBFF00',
+    diff_remove = '#EF3270',
+    diff_change = '#EEFF44',
+    diff_text = '#33DDDD',
+}
+
 local function remove_italics(config, colors)
     if not config.italics and colors.style == 'italic' then
         colors.style = nil
