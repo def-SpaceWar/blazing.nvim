@@ -874,7 +874,7 @@ M.load_plugin_syntax = function(palette)
 end
 
 local default_config = {
-    palette = M.classic,
+    palette = M.default,
     custom_hlgroups = {},
     italics = true,
 }
@@ -888,7 +888,7 @@ M.setup = function(config)
     vim.o.termguicolors = true
     config = config or {}
     config = vim.tbl_deep_extend('keep', config, default_config)
-    local used_palette = config.palette or M.default
+    local used_palette = config.palette
     vim.g.colors_name = used_palette.name
     local syntax = M.load_syntax(used_palette)
     syntax = vim.tbl_deep_extend('keep', config.custom_hlgroups, syntax)

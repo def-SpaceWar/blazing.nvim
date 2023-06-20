@@ -1,1 +1,1 @@
-lua require("blazing").setup { pallete = require("blazing").light }
+lua require("blazing").setup { palette = require("blazing").light }
