@@ -23,7 +23,7 @@ M.default = {
     yellow = '#EEFF44',
     orange = '#FF9900',
     purple = '#DD88FF',
-    red = '#FF0000',
+    red = '#FF4230',
     diff_add = '#BBFF00',
     diff_remove = '#EF3270',
     diff_change = '#EEFF44',
@@ -48,11 +48,11 @@ M.light = {
     black = '#000000',
     pink = '#EF3270',
     green = '#77AA00',
-    blue = '#33CCEE',
-    aqua = '#33EECC',
+    blue = '#22AADD',
+    aqua = '#118866',
     yellow = '#A0AA00',
     orange = '#FF9900',
-    purple = '#DD88FF',
+    purple = '#BB66DD',
     red = '#FF0000',
     diff_add = '#BBFF00',
     diff_remove = '#EF3270',
@@ -287,17 +287,17 @@ M.load_syntax = function(palette)
             style = 'italic',
         },
         PreProc = {
-            fg = palette.orange,
+            fg = palette.red,
         },
         Include = {
-            fg = palette.blue,
+            fg = palette.red,
             style = 'italic',
         },
         Define = {
             fg = palette.pink,
         },
         Macro = {
-            fg = palette.orange,
+            fg = palette.red,
         },
         PreCondit = {
             fg = palette.pink,
@@ -439,7 +439,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.purple,
         },
         ["@constant.macro"] = {
-            fg = palette.orange,
+            fg = palette.red,
         },
         ["@constructor"] = {
             fg = palette.aqua,
@@ -472,7 +472,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.white,
         },
         ["@definition.macro"] = {
-            fg = palette.orange,
+            fg = palette.red,
         },
         ["@definition.method"] = {
             fg = palette.green,
@@ -512,11 +512,11 @@ M.load_plugin_syntax = function(palette)
             fg = palette.green,
         },
         ["@function.macro"] = {
-            fg = palette.orange,
+            fg = palette.red,
             style = 'italic',
         },
         ["@include"] = {
-            fg = palette.blue,
+            fg = palette.red,
             style = 'italic',
         },
         ["@keyword"] = {
@@ -560,7 +560,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.orange,
         },
         ["@preproc"] = {
-            fg = palette.green,
+            fg = palette.red,
         },
         ["@property"] = {
             fg = palette.white,
@@ -721,7 +721,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.aqua,
         },
         ["@lsp.type.macro"] = {
-            fg = palette.orange,
+            fg = palette.red,
         },
         ["@lsp.type.method"] = {
             fg = palette.green,
