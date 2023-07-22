@@ -616,7 +616,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.purple,
         },
         ["@tag"] = {
-            fg = palette.aqua,
+            fg = palette.pink,
         },
         ["@tag.attribute"] = {
             fg = palette.orange,
