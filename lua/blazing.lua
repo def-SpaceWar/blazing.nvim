@@ -182,21 +182,27 @@ M.load_syntax = function(palette)
         },
         DiffAdd = {
             fg = palette.diff_add,
+            style = 'bold',
         },
         DiffDelete = {
             fg = palette.diff_remove,
+            style = 'bold',
         },
         DiffChange = {
             fg = palette.diff_change,
+            style = 'bold',
         },
         DiffText = {
             fg = palette.diff_text,
+            style = 'bold',
         },
         diffAdded = {
             fg = palette.green,
+            style = 'bold',
         },
         diffRemoved = {
             fg = palette.pink,
+            style = 'bold',
         },
         Folded = {
             fg = palette.grey,
