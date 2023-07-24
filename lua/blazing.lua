@@ -181,16 +181,16 @@ M.load_syntax = function(palette)
             fg = palette.blue,
         },
         DiffAdd = {
-            bg = palette.diff_add,
+            fg = palette.diff_add,
         },
         DiffDelete = {
-            bg = palette.diff_remove,
+            fg = palette.diff_remove,
         },
         DiffChange = {
-            bg = palette.diff_change,
+            fg = palette.diff_change,
         },
         DiffText = {
-            bg = palette.diff_text,
+            fg = palette.diff_text,
         },
         diffAdded = {
             fg = palette.green,
