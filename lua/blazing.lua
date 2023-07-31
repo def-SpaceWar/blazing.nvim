@@ -1,37 +1,37 @@
 local M = {}
 
 M.default = {
-    name = 'blazing',
-    base0 = '#151910',
-    base1 = '#151910',
-    base2 = '#252920',
-    base3 = '#323C2E',
-    base4 = '#384233',
-    base5 = '#51544d',
-    base6 = '#a0a49c',
-    base7 = '#b2b8a1',
-    base8 = '#eaefe0',
-    border = '#b2b8a1',
-    brown = '#495445',
-    white = '#EFFFFF',
-    grey = '#6D7248',
-    black = '#000000',
-    pink = '#EF3270',
-    green = '#BBFF00',
-    blue = '#33CCEE',
-    aqua = '#33EECC',
-    yellow = '#EEFF44',
-    orange = '#FF9900',
-    purple = '#DD88FF',
-    red = '#FF4230',
-    diff_add = '#BBFF00',
-    diff_remove = '#EF3270',
-    diff_change = '#EEFF44',
-    diff_text = '#33DDDD',
+    name = "blazing",
+    base0 = "#151910",
+    base1 = "#151910",
+    base2 = "#252920",
+    base3 = "#323C2E",
+    base4 = "#384233",
+    base5 = "#51544d",
+    base6 = "#a0a49c",
+    base7 = "#b2b8a1",
+    base8 = "#eaefe0",
+    border = "#b2b8a1",
+    brown = "#495445",
+    white = "#EFFFFF",
+    grey = "#6D7248",
+    black = "#000000",
+    pink = "#EF3270",
+    green = "#BBFF00",
+    blue = "#33CCEE",
+    aqua = "#33EECC",
+    yellow = "#EEFF44",
+    orange = "#FF9900",
+    purple = "#DD88FF",
+    red = "#FF4230",
+    diff_add = "#BBFF00",
+    diff_remove = "#EF3270",
+    diff_change = "#EEFF44",
+    diff_text = "#33DDDD",
 }
 
 local function remove_italics(config, colors)
-    if not config.italics and colors.style == 'italic' then
+    if not config.italics and colors.style == "italic" then
         colors.style = nil
     end
     return colors
@@ -40,13 +40,11 @@ end
 local function highlighter(config)
     return function(group, color)
         color = remove_italics(config, color)
-        local style = color.style and 'gui=' .. color.style or 'gui=NONE'
-        local fg = color.fg and 'guifg = ' .. color.fg or 'guifg = NONE'
-        local bg = color.bg and 'guibg = ' .. color.bg or 'guibg = NONE'
-        local sp = color.sp and 'guisp = ' .. color.sp or ''
-        vim.cmd(
-            'highlight ' .. group .. ' ' .. style .. ' ' .. fg .. ' ' .. bg .. ' ' .. sp
-        )
+        local style = color.style and "gui=" .. color.style or "gui=NONE"
+        local fg = color.fg and "guifg = " .. color.fg or "guifg = NONE"
+        local bg = color.bg and "guibg = " .. color.bg or "guibg = NONE"
+        local sp = color.sp and "guisp = " .. color.sp or ""
+        vim.cmd("highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp)
     end
 end
 
@@ -79,7 +77,7 @@ M.load_syntax = function(palette)
             bg = palette.base3,
         },
         Cursor = {
-            style = 'reverse',
+            style = "reverse",
         },
         ColorColumn = {
             bg = palette.base3,
@@ -116,19 +114,19 @@ M.load_syntax = function(palette)
         },
         ModeMsg = {
             fg = palette.white,
-            style = 'bold',
+            style = "bold",
         },
         MoreMsg = {
             fg = palette.white,
-            style = 'bold',
+            style = "bold",
         },
         ErrorMsg = {
             fg = palette.red,
-            style = 'bold',
+            style = "bold",
         },
         WarningMsg = {
             fg = palette.yellow,
-            style = 'bold',
+            style = "bold",
         },
         VertSplit = {
             fg = palette.brown,
@@ -156,53 +154,53 @@ M.load_syntax = function(palette)
         },
         SpellBad = {
             fg = palette.red,
-            style = 'undercurl',
+            style = "undercurl",
         },
         SpellCap = {
             fg = palette.purple,
-            style = 'undercurl',
+            style = "undercurl",
         },
         SpellRare = {
             fg = palette.aqua,
-            style = 'undercurl',
+            style = "undercurl",
         },
         SpellLocal = {
             fg = palette.pink,
-            style = 'undercurl',
+            style = "undercurl",
         },
         SpecialKey = {
             fg = palette.pink,
         },
         Title = {
             fg = palette.yellow,
-            style = 'bold',
+            style = "bold",
         },
         Directory = {
             fg = palette.blue,
         },
         DiffAdd = {
             fg = palette.diff_add,
-            style = 'bold',
+            style = "bold",
         },
         DiffDelete = {
             fg = palette.diff_remove,
-            style = 'bold',
+            style = "bold",
         },
         DiffChange = {
             fg = palette.diff_change,
-            style = 'bold',
+            style = "bold",
         },
         DiffText = {
             fg = palette.diff_text,
-            style = 'bold',
+            style = "bold",
         },
         diffAdded = {
             fg = palette.green,
-            style = 'bold',
+            style = "bold",
         },
         diffRemoved = {
             fg = palette.pink,
-            style = 'bold',
+            style = "bold",
         },
         Folded = {
             fg = palette.grey,
@@ -247,7 +245,7 @@ M.load_syntax = function(palette)
         },
         Function = {
             fg = palette.green,
-            style = 'italic',
+            style = "italic",
         },
         Statement = {
             fg = palette.pink,
@@ -260,14 +258,14 @@ M.load_syntax = function(palette)
         },
         Keyword = {
             fg = palette.pink,
-            style = 'italic',
+            style = "italic",
         },
         PreProc = {
             fg = palette.red,
         },
         Include = {
             fg = palette.red,
-            style = 'italic',
+            style = "italic",
         },
         Define = {
             fg = palette.pink,
@@ -289,7 +287,7 @@ M.load_syntax = function(palette)
         },
         SpecialComment = {
             fg = palette.blue,
-            style = 'italic',
+            style = "italic",
         },
         Tag = {
             fg = palette.orange,
@@ -299,10 +297,10 @@ M.load_syntax = function(palette)
         },
         Comment = {
             fg = palette.grey,
-            style = 'italic',
+            style = "italic",
         },
         Underlined = {
-            style = 'underline',
+            style = "underline",
         },
         Ignore = {},
         Error = {
@@ -319,16 +317,16 @@ M.load_syntax = function(palette)
             fg = palette.grey,
         },
         vCursor = {
-            style = 'reverse',
+            style = "reverse",
         },
         iCursor = {
-            style = 'reverse',
+            style = "reverse",
         },
         lCursor = {
-            style = 'reverse',
+            style = "reverse",
         },
         CursorIM = {
-            style = 'reverse',
+            style = "reverse",
         },
         CursorColumn = {
             bg = palette.base3,
@@ -342,7 +340,7 @@ M.load_syntax = function(palette)
         },
         QuickFixLine = {
             fg = palette.purple,
-            style = 'bold',
+            style = "bold",
         },
         Debug = {
             fg = palette.orange,
@@ -375,7 +373,7 @@ M.load_plugin_syntax = function(palette)
     }
     local uri_group = {
         fg = palette.blue,
-        style = 'underline',
+        style = "underline",
     }
     return {
         -- @selector.language
@@ -397,7 +395,7 @@ M.load_plugin_syntax = function(palette)
         },
         ["@comment"] = {
             fg = palette.grey,
-            style = 'italic',
+            style = "italic",
         },
         ["@conceal"] = {
             fg = palette.grey,
@@ -479,7 +477,7 @@ M.load_plugin_syntax = function(palette)
         },
         ["@function"] = {
             fg = palette.green,
-            style = 'italic',
+            style = "italic",
         },
         ["@function.builtin"] = {
             fg = palette.pink,
@@ -489,19 +487,19 @@ M.load_plugin_syntax = function(palette)
         },
         ["@function.macro"] = {
             fg = palette.red,
-            style = 'italic',
+            style = "italic",
         },
         ["@include"] = {
             fg = palette.red,
-            style = 'italic',
+            style = "italic",
         },
         ["@keyword"] = {
             fg = palette.pink,
-            style = 'italic',
+            style = "italic",
         },
         ["@keyword.function"] = {
             fg = palette.blue,
-            style = 'italic',
+            style = "italic",
         },
         ["@keyword.operator"] = {
             fg = palette.pink,
@@ -605,7 +603,7 @@ M.load_plugin_syntax = function(palette)
         },
         ["@text.danger"] = {
             fg = palette.red,
-            style = 'bold',
+            style = "bold",
         },
         ["@text.diff.add"] = {
             fg = palette.diff_add,
@@ -614,7 +612,7 @@ M.load_plugin_syntax = function(palette)
             fg = palette.diff_remove,
         },
         ["@text.emphasis"] = {
-            style = 'bold',
+            style = "bold",
         },
         ["@text.environment"] = {
             fg = palette.purple,
@@ -628,31 +626,31 @@ M.load_plugin_syntax = function(palette)
         ["@text.math"] = math_group,
         ["@text.note"] = {
             fg = palette.aqua,
-            style = 'bold',
+            style = "bold",
         },
         ["@text.quote"] = {
             fg = palette.grey,
         },
         ["@text.reference"] = {
             fg = palette.orange,
-            style = 'italic',
+            style = "italic",
         },
         ["@text.strike"] = strike_group,
         ["@text.strong"] = {
-            style = 'bold',
+            style = "bold",
         },
         ["@text.title"] = {
             fg = palette.yellow,
-            style = 'bold',
+            style = "bold",
         },
         ["@text.todo"] = todo_group,
         ["@text.underline"] = {
-            style = 'underline',
+            style = "underline",
         },
         ["@text.uri"] = uri_group,
         ["@text.warning"] = {
             fg = palette.yellow,
-            style = 'bold',
+            style = "bold",
         },
         ["@todo"] = todo_group,
         ["@type"] = {
@@ -752,19 +750,19 @@ M.load_plugin_syntax = function(palette)
             fg = palette.aqua,
         },
         DiagnosticUnderlineError = {
-            style = 'undercurl',
+            style = "undercurl",
             sp = palette.red,
         },
         DiagnosticUnderlineWarn = {
-            style = 'undercurl',
+            style = "undercurl",
             sp = palette.yellow,
         },
         DiagnosticUnderlineInfo = {
-            style = 'undercurl',
+            style = "undercurl",
             sp = palette.white,
         },
         DiagnosticUnderlineHint = {
-            style = 'undercurl',
+            style = "undercurl",
             sp = palette.aqua,
         },
         CursorWord0 = {
@@ -783,7 +781,7 @@ M.load_plugin_syntax = function(palette)
         },
         NvimTreeSpecialFile = {
             fg = palette.white,
-            style = 'NONE',
+            style = "NONE",
         },
 
         -- Telescope
@@ -796,7 +794,7 @@ M.load_plugin_syntax = function(palette)
         },
         TelescopeSelection = {
             fg = palette.white,
-            style = 'bold',
+            style = "bold",
         },
         TelescopeSelectionCaret = {
             fg = palette.green,
@@ -846,6 +844,15 @@ M.load_plugin_syntax = function(palette)
 
         -- ray-x/lsp_signature.nvim
         LspSignatureActiveParameter = { fg = palette.orange },
+
+        -- HiPhish/rainbow-delimiters.nvim
+        RainbowDelimiterRed = { fg = palette.pink },
+        RainbowDelimiterOrange = { fg = palette.orange },
+        RainbowDelimiterYellow = { fg = palette.yellow },
+        RainbowDelimiterGreen = { fg = palette.green },
+        RainbowDelimiterCyan = { fg = palette.aqua },
+        RainbowDelimiterBlue = { fg = palette.blue },
+        RainbowDelimiterViolet = { fg = palette.purple },
     }
 end
 
@@ -856,28 +863,24 @@ local default_config = {
 }
 
 M.setup = function(config)
-    vim.cmd('hi clear')
-    if vim.fn.exists('syntax_on') then
-        vim.cmd('syntax reset')
+    vim.cmd("hi clear")
+    if vim.fn.exists("syntax_on") then
+        vim.cmd("syntax reset")
     end
-    vim.o.background = 'dark'
+    vim.o.background = "dark"
     vim.o.termguicolors = true
     config = config or {}
-    config = vim.tbl_deep_extend('keep', config, default_config)
+    config = vim.tbl_deep_extend("keep", config, default_config)
     local used_palette = config.palette
     vim.g.colors_name = used_palette.name
     local syntax = M.load_syntax(used_palette)
-    syntax = vim.tbl_deep_extend('keep', config.custom_hlgroups, syntax)
+    syntax = vim.tbl_deep_extend("keep", config.custom_hlgroups, syntax)
     local highlight = highlighter(config)
     for group, colors in pairs(syntax) do
         highlight(group, colors)
     end
     local plugin_syntax = M.load_plugin_syntax(used_palette)
-    plugin_syntax = vim.tbl_deep_extend(
-        'keep',
-        config.custom_hlgroups,
-        plugin_syntax
-    )
+    plugin_syntax = vim.tbl_deep_extend("keep", config.custom_hlgroups, plugin_syntax)
     for group, colors in pairs(plugin_syntax) do
         highlight(group, colors)
     end
