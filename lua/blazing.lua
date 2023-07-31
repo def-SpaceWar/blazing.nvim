@@ -30,6 +30,36 @@ M.default = {
     diff_text = "#33DDDD",
 }
 
+M.modern = {
+    name = "blazing_modern",
+    base0 = "#101519",
+    base1 = "#101519",
+    base2 = "#202529",
+    base3 = "#2E323C",
+    base4 = "#333842",
+    base5 = "#4d5154",
+    base6 = "#9ca0a4",
+    base7 = "#a1b2b8",
+    base8 = "#e0eaef",
+    border = "#a1b2b8",
+    brown = "#454954",
+    white = "#FFEFFF",
+    grey = "#486D72",
+    black = "#000000",
+    pink = "#EF3270",
+    green = "#BBFF00",
+    blue = "#33CCEE",
+    aqua = "#33EECC",
+    yellow = "#EEFF44",
+    orange = "#FF9900",
+    purple = "#DD88FF",
+    red = "#FF4230",
+    diff_add = "#BBFF00",
+    diff_remove = "#EF3270",
+    diff_change = "#EEFF44",
+    diff_text = "#33DDDD",
+}
+
 local function remove_italics(config, colors)
     if not config.italics and colors.style == "italic" then
         colors.style = nil
