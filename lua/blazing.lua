@@ -137,7 +137,8 @@ M.load_syntax = function(palette)
             bg = palette.base2,
         },
         MatchParen = {
-            fg = palette.pink,
+            fg = palette.white,
+            bg = palette.green,
         },
         Question = {
             fg = palette.yellow,
